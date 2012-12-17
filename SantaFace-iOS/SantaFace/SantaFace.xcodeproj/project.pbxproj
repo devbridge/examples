@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EB80F0D1668DA7800AB7B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB80F0C1668DA7800AB7B3C /* UIKit.framework */; };
+		3EB80F0F1668DA7900AB7B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB80F0E1668DA7800AB7B3C /* Foundation.framework */; };
+		3EB80F111668DA7900AB7B3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB80F101668DA7900AB7B3C /* CoreGraphics.framework */; };
+		3EB80F171668DA7900AB7B3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F151668DA7900AB7B3C /* InfoPlist.strings */; };
+		3EB80F191668DA7900AB7B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB80F181668DA7900AB7B3C /* main.m */; };
+		3EB80F1D1668DA7900AB7B3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB80F1C1668DA7900AB7B3C /* AppDelegate.m */; };
+		3EB80F1F1668DA7900AB7B3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F1E1668DA7900AB7B3C /* Default.png */; };
+		3EB80F211668DA7900AB7B3C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F201668DA7900AB7B3C /* Default@2x.png */; };
+		3EB80F231668DA7900AB7B3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F221668DA7900AB7B3C /* Default-568h@2x.png */; };
+		3EB80F261668DA7900AB7B3C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F241668DA7900AB7B3C /* MainStoryboard.storyboard */; };
+		3EB80F291668DA7900AB7B3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB80F281668DA7900AB7B3C /* ViewController.m */; };
+		3EB80F331668FD8300AB7B3C /* DetectFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB80F311668FD8300AB7B3C /* DetectFace.m */; };
+		3EB80F3F1669007100AB7B3C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB80F3E1669007100AB7B3C /* CoreImage.framework */; };
+		3EB80F421669009000AB7B3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB80F381669006000AB7B3C /* QuartzCore.framework */; };
+		3EB80F431669009900AB7B3C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB80F341669005300AB7B3C /* AVFoundation.framework */; };
+		3EB80F44166900A900AB7B3C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB80F3A1669006600AB7B3C /* CoreMedia.framework */; };
+		3EB80F45166900C300AB7B3C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB80F401669007600AB7B3C /* CoreVideo.framework */; };
+		3EB80F491669098000AB7B3C /* mustache.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F461669098000AB7B3C /* mustache.png */; };
+		3EB80F4A1669098000AB7B3C /* christmas_hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F471669098000AB7B3C /* christmas_hat.png */; };
+		3EB80F4B1669098000AB7B3C /* beard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F481669098000AB7B3C /* beard.png */; };
+		3EB80F4D16690F4200AB7B3C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F4C16690F4200AB7B3C /* icon.png */; };
+		3EB80F4F16690F4600AB7B3C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB80F4E16690F4600AB7B3C /* icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EB80F081668DA7800AB7B3C /* SantaFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantaFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB80F0C1668DA7800AB7B3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3EB80F0E1668DA7800AB7B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3EB80F101668DA7900AB7B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3EB80F141668DA7900AB7B3C /* SantaFace-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SantaFace-Info.plist"; sourceTree = "<group>"; };
+		3EB80F161668DA7900AB7B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3EB80F181668DA7900AB7B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3EB80F1A1668DA7900AB7B3C /* SantaFace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SantaFace-Prefix.pch"; sourceTree = "<group>"; };
+		3EB80F1B1668DA7900AB7B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3EB80F1C1668DA7900AB7B3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3EB80F1E1668DA7900AB7B3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3EB80F201668DA7900AB7B3C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3EB80F221668DA7900AB7B3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3EB80F251668DA7900AB7B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3EB80F271668DA7900AB7B3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3EB80F281668DA7900AB7B3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3EB80F311668FD8300AB7B3C /* DetectFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectFace.m; sourceTree = "<group>"; };
+		3EB80F321668FD8300AB7B3C /* DetectFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectFace.h; sourceTree = "<group>"; };
+		3EB80F341669005300AB7B3C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3EB80F361669005900AB7B3C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3EB80F381669006000AB7B3C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3EB80F3A1669006600AB7B3C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3EB80F3C1669006C00AB7B3C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		3EB80F3E1669007100AB7B3C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		3EB80F401669007600AB7B3C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3EB80F461669098000AB7B3C /* mustache.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mustache.png; sourceTree = "<group>"; };
+		3EB80F471669098000AB7B3C /* christmas_hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = christmas_hat.png; sourceTree = "<group>"; };
+		3EB80F481669098000AB7B3C /* beard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beard.png; sourceTree = "<group>"; };
+		3EB80F4C16690F4200AB7B3C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		3EB80F4E16690F4600AB7B3C /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EB80F051668DA7800AB7B3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB80F45166900C300AB7B3C /* CoreVideo.framework in Frameworks */,
+				3EB80F44166900A900AB7B3C /* CoreMedia.framework in Frameworks */,
+				3EB80F431669009900AB7B3C /* AVFoundation.framework in Frameworks */,
+				3EB80F421669009000AB7B3C /* QuartzCore.framework in Frameworks */,
+				3EB80F3F1669007100AB7B3C /* CoreImage.framework in Frameworks */,
+				3EB80F0D1668DA7800AB7B3C /* UIKit.framework in Frameworks */,
+				3EB80F0F1668DA7900AB7B3C /* Foundation.framework in Frameworks */,
+				3EB80F111668DA7900AB7B3C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EB80EFD1668DA7800AB7B3C = {
+			isa = PBXGroup;
+			children = (
+				3EB80F4E16690F4600AB7B3C /* icon@2x.png */,
+				3EB80F4C16690F4200AB7B3C /* icon.png */,
+				3EB80F121668DA7900AB7B3C /* SantaFace */,
+				3EB80F0B1668DA7800AB7B3C /* Frameworks */,
+				3EB80F091668DA7800AB7B3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EB80F091668DA7800AB7B3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EB80F081668DA7800AB7B3C /* SantaFace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EB80F0B1668DA7800AB7B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EB80F401669007600AB7B3C /* CoreVideo.framework */,
+				3EB80F3E1669007100AB7B3C /* CoreImage.framework */,
+				3EB80F3C1669006C00AB7B3C /* AssetsLibrary.framework */,
+				3EB80F3A1669006600AB7B3C /* CoreMedia.framework */,
+				3EB80F381669006000AB7B3C /* QuartzCore.framework */,
+				3EB80F361669005900AB7B3C /* ImageIO.framework */,
+				3EB80F341669005300AB7B3C /* AVFoundation.framework */,
+				3EB80F0C1668DA7800AB7B3C /* UIKit.framework */,
+				3EB80F0E1668DA7800AB7B3C /* Foundation.framework */,
+				3EB80F101668DA7900AB7B3C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EB80F121668DA7900AB7B3C /* SantaFace */ = {
+			isa = PBXGroup;
+			children = (
+				3EB80F461669098000AB7B3C /* mustache.png */,
+				3EB80F471669098000AB7B3C /* christmas_hat.png */,
+				3EB80F481669098000AB7B3C /* beard.png */,
+				3EB80F321668FD8300AB7B3C /* DetectFace.h */,
+				3EB80F311668FD8300AB7B3C /* DetectFace.m */,
+				3EB80F1B1668DA7900AB7B3C /* AppDelegate.h */,
+				3EB80F1C1668DA7900AB7B3C /* AppDelegate.m */,
+				3EB80F241668DA7900AB7B3C /* MainStoryboard.storyboard */,
+				3EB80F271668DA7900AB7B3C /* ViewController.h */,
+				3EB80F281668DA7900AB7B3C /* ViewController.m */,
+				3EB80F131668DA7900AB7B3C /* Supporting Files */,
+			);
+			path = SantaFace;
+			sourceTree = "<group>";
+		};
+		3EB80F131668DA7900AB7B3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EB80F141668DA7900AB7B3C /* SantaFace-Info.plist */,
+				3EB80F151668DA7900AB7B3C /* InfoPlist.strings */,
+				3EB80F181668DA7900AB7B3C /* main.m */,
+				3EB80F1A1668DA7900AB7B3C /* SantaFace-Prefix.pch */,
+				3EB80F1E1668DA7900AB7B3C /* Default.png */,
+				3EB80F201668DA7900AB7B3C /* Default@2x.png */,
+				3EB80F221668DA7900AB7B3C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EB80F071668DA7800AB7B3C /* SantaFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB80F2C1668DA7900AB7B3C /* Build configuration list for PBXNativeTarget "SantaFace" */;
+			buildPhases = (
+				3EB80F041668DA7800AB7B3C /* Sources */,
+				3EB80F051668DA7800AB7B3C /* Frameworks */,
+				3EB80F061668DA7800AB7B3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SantaFace;
+			productName = SantaFace;
+			productReference = 3EB80F081668DA7800AB7B3C /* SantaFace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EB80EFF1668DA7800AB7B3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = DevBridge;
+			};
+			buildConfigurationList = 3EB80F021668DA7800AB7B3C /* Build configuration list for PBXProject "SantaFace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3EB80EFD1668DA7800AB7B3C;
+			productRefGroup = 3EB80F091668DA7800AB7B3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EB80F071668DA7800AB7B3C /* SantaFace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EB80F061668DA7800AB7B3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB80F171668DA7900AB7B3C /* InfoPlist.strings in Resources */,
+				3EB80F1F1668DA7900AB7B3C /* Default.png in Resources */,
+				3EB80F211668DA7900AB7B3C /* Default@2x.png in Resources */,
+				3EB80F231668DA7900AB7B3C /* Default-568h@2x.png in Resources */,
+				3EB80F261668DA7900AB7B3C /* MainStoryboard.storyboard in Resources */,
+				3EB80F491669098000AB7B3C /* mustache.png in Resources */,
+				3EB80F4A1669098000AB7B3C /* christmas_hat.png in Resources */,
+				3EB80F4B1669098000AB7B3C /* beard.png in Resources */,
+				3EB80F4D16690F4200AB7B3C /* icon.png in Resources */,
+				3EB80F4F16690F4600AB7B3C /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EB80F041668DA7800AB7B3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB80F191668DA7900AB7B3C /* main.m in Sources */,
+				3EB80F1D1668DA7900AB7B3C /* AppDelegate.m in Sources */,
+				3EB80F291668DA7900AB7B3C /* ViewController.m in Sources */,
+				3EB80F331668FD8300AB7B3C /* DetectFace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3EB80F151668DA7900AB7B3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EB80F161668DA7900AB7B3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3EB80F241668DA7900AB7B3C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EB80F251668DA7900AB7B3C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EB80F2A1668DA7900AB7B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3EB80F2B1668DA7900AB7B3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Aurimas Adomavicius (9J577775KE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aurimas Adomavicius (9J577775KE)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "360E7074-4BFE-4148-88A8-D8F938D15DE3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "360E7074-4BFE-4148-88A8-D8F938D15DE3";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EB80F2D1668DA7900AB7B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SantaFace/SantaFace-Prefix.pch";
+				INFOPLIST_FILE = "SantaFace/SantaFace-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3EB80F2E1668DA7900AB7B3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DevBridge";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: DevBridge";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SantaFace/SantaFace-Prefix.pch";
+				INFOPLIST_FILE = "SantaFace/SantaFace-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C4D369D2-25A1-4B18-8ED9-63047667AD63";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C4D369D2-25A1-4B18-8ED9-63047667AD63";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EB80F021668DA7800AB7B3C /* Build configuration list for PBXProject "SantaFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB80F2A1668DA7900AB7B3C /* Debug */,
+				3EB80F2B1668DA7900AB7B3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB80F2C1668DA7900AB7B3C /* Build configuration list for PBXNativeTarget "SantaFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB80F2D1668DA7900AB7B3C /* Debug */,
+				3EB80F2E1668DA7900AB7B3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EB80EFF1668DA7800AB7B3C /* Project object */;
+}
