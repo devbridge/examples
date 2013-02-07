@@ -1,0 +1,16 @@
+# Build and Object Folders
+bin/
+obj/
+Obj/
+
+#User Specific Files
+*.user
+*.suo
+*.userprefs
+*.pidb
+
+
+#Resource Caches
+_ReSharper.*
+*.sln.cache
+*.Cache

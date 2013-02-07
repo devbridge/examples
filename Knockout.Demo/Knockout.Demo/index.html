@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>KnockOut Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+</head>
+<body>
+	<div class="demo-container" id="bind-container">
+		<div class="demo-container-header">
+			<div class="demo-container-title">KnockOut Demo</div>
+		</div>
+	
+		<div class="demo-container-content">
+			<div class="demo-container-content-padded">
+				<div class="demo-top-block-holder">
+					<div class="demo-top-block-controls-holder">
+						<a class="demo-add-new-folder" data-bind="click: addNewFolder">New Folder</a>
+						<a class="demo-upload-new-file" data-bind="click: addNewFile">New File</a>
+					</div>
+					<div class="demo-search-block">
+						<input class="demo-editor-field-box" type="text" placeholder="Search" data-bind="value: searchQuery, valueUpdate: 'afterkeydown', enterPress: searchItems" />
+						<div class="demo-btn-search" data-bind="click: searchItems">Search</div>
+					</div>
+				</div>
+                
+                <div class="demo-breadcrumbs-holder">
+                    <div data-bind="foreach: path()"><a class="demo-breadcrumbs-root" href="#" data-bind="html: title() + '/&nbsp;', click: openItem"></a></div>
+                </div>
+
+			    <div class="demo-list">
+					<div class="demo-media-sorting-block" data-bind="template: {name: 'header-template'}"></div>
+
+					<!-- ko if: !isRootFolder() -->
+					<div class="demo-folder-box" data-bind="click: openParentFolder">
+						<div class="demo-media-items-block">
+							<div class="demo-system-folder"></div>
+							<div class="demo-media-name">..</div>
+						</div>
+					</div>
+					<!-- /ko -->
+
+					<div data-bind="foreach: items">
+						<div data-bind="css: rowClassNames()">
+							<div class="demo-media-items-block">
+								<div data-bind="css: iconClassNames(), click: openItem"></div>
+								<div class="demo-media-name" data-bind="text: title(), click: openItem"></div>
+							</div>
+							<div class="demo-media-edit-controls">
+								<input type="text" class="demo-grid-input" data-bind="value: title, valueUpdate: 'afterkeydown', enterPress: saveItem, escPress: cancelEditItem, hasfocus: isActive(), css: {'input-validation-error': title.hasError()}" />
+
+								<div class="demo-media-inner-controls">
+									<div class="demo-btn-small" data-bind="click: saveItem">Save</div>
+									<div class="demo-btn-links-small" data-bind="click: cancelEditItem">Cancel</div>
+								</div>
+								<a class="demo-icn-edit" data-bind="click: editItem">Edit</a>
+								<a class="demo-icn-delete" data-bind="click: deleteItem.bind($data, $parent, 'a', 'b    ')">Delete</a>
+							</div>
+						</div>
+					</div>
+                    
+			        <!-- knockout template example: we can reuse same template as many times as we want
+			        <div class="demo-media-sorting-block" data-bind="template: {name: 'header-template'}"></div>
+                    -->
+
+			        <div class="demo-add-folder">
+						<div class="demo-media-items-block" data-bind="click: addNewFolder">
+							<div class="demo-system-addfolder"></div>
+							<div class="demo-media-name">Add New Folder</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	
+    <script type="text/html" id="header-template">
+        <div class="demo-media-col-1"></div>
+		<div class="demo-media-col-2">
+			<a class="demo-sort-arrow" data-bind="click: sortItems.bind($root, 'Title'), css: {'demo-sort-arrow-top': isSortedAscending('Title'), 'demo-sort-arrow-bottom': isSortedDescending('Title') }">File Name</a>
+		</div>
+		<div class="demo-media-col-3">
+			<a class="demo-sort-arrow" data-bind="click: sortItems.bind($root, 'Extension'), css: {'demo-sort-arrow-top': isSortedAscending('Extension'), 'demo-sort-arrow-bottom': isSortedDescending('Extension') }">File Type</a>
+		</div>
+    </script>
+
+    <script type="text/javascript" src="scripts/knockout-2.2.0.js"></script>
+    <script type="text/javascript" src="scripts/devbridge.ko.extensions.js"></script>
+    <script type="text/javascript" src="scripts/demo.listViewModel.js"></script>
+    <script type="text/javascript" src="scripts/demo.itemViewModel.js"></script>
+    <script type="text/javascript" src="scripts/demo.data-mock.js"></script>
+	<script type="text/javascript" src="scripts/demo.js"></script>
+</body>
+</html>
+	
