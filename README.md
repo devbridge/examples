@@ -1,2 +1,2 @@
-A repository to share public source code examples.
+[Archived] A repository to share public source code examples.
 ========
